@@ -41,3 +41,5 @@
 ### lacalhost ,127.0.0.1
 *컴퓨터의 Locla Loop Backck Address 
 *Local에서 Server등의 서비스를 실행하고 테스트 할수 있는 주소
+
+### git 오류 내기
