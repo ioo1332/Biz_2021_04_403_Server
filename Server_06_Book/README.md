@@ -26,3 +26,17 @@
 *좀더 세밀한 처리가 필요할경우 service클래스에게 요청을 하고 결과를 return받는다
 *client에게 문자열 view형식으로 보여주기를 준비한다 이때 모든 보여주는 형식은
 HTML 코딩 형식으로 만든다
+
+##WAS 프로젝트에서 /webapp/WEP-inf/폴더
+*mvc패턴의 프로젝트 에서는 모든 요청을 반드시 controller클래스에서 처리하고 사용자에게 보여주는 부분은 jsp파일에서 처리하도록 작성을한다
+*전통적인 was프로젝트에서는 wdbapp폴더에 jsp파일을 저장하는데 wepapp폴더에 저장된 jsp파일은 web browser에서 직접 호출하여 사용할수있다
+*jsp를 직접호출하여 작동시키는 방식은 보안등의 문제 대형 프로젝트의 작성을 어렵게 만드는 요인이다 
+*mvc패턴에서는 jsp파일을 직접 호출하지 못하도록 한다
+*WEB-INF 폴더에 views 폴더를 만들고 jsp를 저장하면 web browser에서 jsp를 직접 호출할수 없게 된다 WEB-INF는 프로젝트의 CONTROLLER
+클래스에서만 접근할수 있도록 되어있다
+*JSP파일을 모두 WEP-INF폴더 아래에 두고 프로젝트를 진행 한다
+*MVC패턴에서는 개발자와 디자이너가 협업을 쉽게 할수있도록 연산을 담당하는 Controller는 기능을 강화하고 jsp파일은 보여주는 용도로만 기능을 제한한다
+*MVC패턴을 준수하면 프로젝트가 대형화되어 갈수록 효과가 나타난다.
+*Controller 에서 WEB-INF폴더 아래의 jsp를 호출하려면 requestDispatcher 클래스르 사용하여 접근한다.
+
+

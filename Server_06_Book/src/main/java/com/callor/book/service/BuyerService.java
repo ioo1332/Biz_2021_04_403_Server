@@ -12,13 +12,12 @@ public interface BuyerService {
 	
 	public List<BuyerDTO> selectAll();
 	
-	public BuyerDTO findById(String Bu_code);
-	public List<BuyerDTO> findByName(String Bu_name);
-	public List<BuyerDTO> findByTel(String Bu_tel); 
-	
+	public BuyerDTO findById(String bu_code);
+	public List<BuyerDTO> findByName(String bu_name);
+	public List<BuyerDTO> findByTel(String bu_tel);
+
 	public int insert(BuyerVO buyerVO);
 	public int update(BuyerVO buyerVO);
 	public int delete(String bu_code);
-
 
 }
