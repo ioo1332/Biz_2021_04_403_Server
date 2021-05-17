@@ -24,17 +24,18 @@ import lombok.ToString;
 @AllArgsConstructor
 
 public class MyFoodCDTO {
-
-	private static String mf_date;// ="섭취일자";
-	private static String mf_fcode;// ="식품코드";
-	private static String mf_fname;// ="식품명";
-	private float mf_amt;// ="섭취량";
-	private float mf_once;// ="제공량";
-	private float mf_capa;// ="총내용량";
-	private float mf_cal;// ="에너지";
-	private float mf_protein;// ="단백질";
-	private float mf_fat;// ="지방";
-	private float mf_carbo;// ="탄수화물";
-	private float mf_sugar;// ="총당류";
+	
+	private Long mf_seq;  //일련번호
+	private String mf_date;// ="섭취일자";
+	private String mf_fcode;// ="식품코드";
+	private String mf_fname;// ="식품명";
+	private Float mf_amt;// ="섭취량";
+	private Float mf_once;// ="제공량";
+	private Float mf_capa;// ="총내용량";
+	private Float mf_cal;// ="에너지";
+	private Float mf_protein;// ="단백질";
+	private Float mf_fat;// ="지방";
+	private Float mf_carbo;// ="탄수화물";
+	private Float mf_sugar;// ="총당류";
 
 }

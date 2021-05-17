@@ -8,12 +8,14 @@ import javax.servlet.http.HttpServletResponse;
 
 public class ReqController {
 	
-	public static void forward(HttpServletRequest req,HttpServletResponse resp,String file) throws ServletException, IOException {
-		//file="/WEB-INF/views/search.jsp"
-		file="/WEB-INF/views/"+file+".jsp";
+	public static void forward(HttpServletRequest req, 
+								HttpServletResponse resp, 
+								String file) throws ServletException, IOException {
 		
-		req.getRequestDispatcher(file).forward(req, resp);
-		
+		// file = "/WEB-INF/views/search.jsp"
+		file = "/WEB-INF/views/" + file + ".jsp";
+		req.getRequestDispatcher(file)
+		.forward(req, resp);
+	
 	}
-
 }

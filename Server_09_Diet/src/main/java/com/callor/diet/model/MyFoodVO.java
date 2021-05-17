@@ -15,12 +15,12 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class MyfoodVO {
+public class MyFoodVO {
 	
 	private Long mf_seq;//	NUMBER
 	private String mf_date;//	VARCHAR2(10)
 	private String mf_fcode;//	CHAR(7)
-	private String mf_amt;//	NUMBER(10,2)
+	private Float mf_amt;//	NUMBER(10,2)
 
 
 }
