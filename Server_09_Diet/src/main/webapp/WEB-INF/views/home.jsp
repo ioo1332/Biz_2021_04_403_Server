@@ -10,7 +10,7 @@
 
 <title>Insert title here</title>
 
-<link rel="stylesheet"href="${rootPath}/css/home.css?ver=1" />	
+<link rel="stylesheet"href="${rootPath}/css/home.css?ver=2021-05-18-001" />	
 <%--
 외부의 css file 가져오기
 webapp 폴더는 프로젝트의 외부에서 접근할때

@@ -37,7 +37,7 @@ public class KoreaFilter implements Filter{
 		 */
 		
 		req.setCharacterEncoding("UTF-8");
-		res.setContentType("text/html;charset=UTF-8");
+		//res.setContentType("text/html;charset=UTF-8");
 		chain.doFilter(req, res);
 	}
 	
