@@ -24,7 +24,17 @@ import javax.servlet.annotation.WebFilter;
  */
 //urlpatterns = "/food/*"로 설정하면 
 //localhost:8080/diet/food로 요청하는 부분만 처리
-@WebFilter(urlPatterns="/*")
+
+/* filter에서 response.setContentType 을 지정할때
+ * text/html로 지정하면 jsp, js, 기타 여러가지  static 파일들이
+ * 모두 html contentType으로 지정되어 webBrowser로 전송되어 제기능을 수행하지 못하는 현상이 발생한다
+ * 이럴때는 webFilter urlpattern을 문자열 배열로 생성하고
+ * 각 controller에 지정된 webServlet필터를 나열해주면 controller로 요청되는 사항들만 filtering을 하게되어
+ * 기타 다른 static file들에는 영향을 미치지 않는다
+ * 
+ */
+
+@WebFilter(urlPatterns={"/","/food/*"})
 public class KoreaFilter implements Filter{
 
 	@Override
