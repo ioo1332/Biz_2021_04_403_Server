@@ -1,7 +1,38 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<h1>방명록 2021</h1>
+
 <style>
+/*
+	css를 사용하여 화면을 디자인할때 항상 먼저 있어야할설정
+	기본 html의 margin padding을 clear하여 이후에 작성된 css의
+	margin padding을 원활이 적용시키기 위함이다
+	
+	box-sizing : border-box;
+	block type tag를 사용하여 화면을 그릴때
+	padding margin border값을 지정할때
+	좌우로 벗어나서 그려지는 현상을 없애기 위한 설정
+*/
+
+*{
+	margin:0;
+	paddiing0;
+	box-sizing: border-box;
+}
+h1.main{
+	color:white;
+	text-align:center;
+	background-color: green;
+	/*
+	HTML CSS에서의 단위구조
+	dp,sp,pt,px : 절대값으로 단위 지정하기
+	
+	rem(em): 상대값으로 단위 지정하기 내부에 text가 포함된 tag의 경우 
+	text 높이를 1rem(em)으로 설정하고 비율에 맞춰 상대적으로 크기를 지정하기
+	
+	*/
+	padding: 2rem;
+}
+
 nav#main{
 	background-color: blue;
 }
@@ -38,6 +69,7 @@ nav#main li:hover{
 }
 
 </style>
+
 <script>
 	/*
 	html문서를 dom(document object model)이라고 한다
@@ -85,7 +117,7 @@ nav#main li:hover{
 		
 	
 	</script>
-
+<h1 class="main">방명록 2021</h1>
 	<%-- 메뉴를 설정할때 사용하는 tag - <nab> 
 		div 라는 tag를 사용하여 layout을 설정했는데
 		HTML5에서는 symatec(의미있는이름)tag를
