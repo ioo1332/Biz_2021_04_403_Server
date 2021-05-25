@@ -16,8 +16,8 @@ public class OracleConnection {
 
 		try {
 			Class.forName(jdbcDriver);
-			if(dbConn==null) {
-			dbConn = DriverManager.getConnection(url, username, password);
+			if (dbConn == null) {
+				dbConn = DriverManager.getConnection(url, username, password);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -27,10 +27,10 @@ public class OracleConnection {
 			e.printStackTrace();
 		}
 
-		
-		}
+	}
+
 	public static Connection getDBConnection() {
 		return dbConn;
- 	}
+	}
 
 }

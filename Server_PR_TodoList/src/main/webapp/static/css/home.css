@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+	margin :0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+h1{
+	color:black;
+	text-align:center;
+	background-color: blue;
+	padding: 2rem;
+}
+
+table{
+	border-collapse: collapse;
+	width:80%;
+	margin:10px auto;
+}
+td,th{
+	border:1px solid blue;
+	padding:5px;
+	text-align: center;
+}
+section{
+	text-align: center;
+}

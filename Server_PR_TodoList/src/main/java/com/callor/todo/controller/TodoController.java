@@ -80,7 +80,7 @@ public class TodoController extends HttpServlet {
 		System.out.println(tdVO.toString());
 		if (subPath.equals("/insert")) {
 			tdService.insert(tdVO);
-			resp.sendRedirect("/todo");
+			resp.sendRedirect("/todo/");
 		} else if (subPath.equals("/update")) {
 			String strSeq = req.getParameter("td_seq");
 			Long td_seq=Long.valueOf(strSeq);

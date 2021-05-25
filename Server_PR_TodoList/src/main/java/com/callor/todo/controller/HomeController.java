@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.callor.todo.model.TodoListVO;
 import com.callor.todo.service.TodoService;
 import com.callor.todo.service.impl.TodoServiceImplV1;
-@WebServlet
+@WebServlet("/")
 public class HomeController extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
@@ -27,8 +27,8 @@ public class HomeController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		List<TodoListVO>todoList=tdService.selectAll();
-		req.setAttribute("TDLIST", todoList);
+		List<TodoListVO>tdList=tdService.selectAll();
+		req.setAttribute("TDLIST", tdList);
 		req.getRequestDispatcher("/WEB-INF/views/home.jsp").forward(req, resp);
 		
 		
