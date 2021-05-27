@@ -7,6 +7,12 @@
 	<version>0.1</version>
 	<packaging>pom</packaging>
 	<name>ioo</name>
+	<!-- pom.xml에서 공통으로 사용할변수
+	java 1.1
+	java2 1.2 1.4
+	java5 1.5 1.6
+	java7 1.7 1.8
+	 -->
 	<properties>
 		<java-version>15</java-version>
 
